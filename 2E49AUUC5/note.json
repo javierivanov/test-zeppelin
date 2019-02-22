@@ -21,11 +21,22 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.io.FileNotFoundException: File file:/home/zeppelin/jars/magellan-1.0.5-s_2.11.jar does not exist\n\tat org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:641)\n\tat org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:930)\n\tat org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:631)\n\tat org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:454)\n\tat org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:386)\n\tat org.apache.hadoop.fs.FileUtil.copy(FileUtil.java:337)\n\tat org.apache.spark.deploy.yarn.Client.copyFileToRemote(Client.scala:356)\n\tat org.apache.spark.deploy.yarn.Client.org$apache$spark$deploy$yarn$Client$$distribute$1(Client.scala:478)\n\tat org.apache.spark.deploy.yarn.Client$$anonfun$prepareLocalResources$17$$anonfun$apply$6.apply(Client.scala:652)\n\tat org.apache.spark.deploy.yarn.Client$$anonfun$prepareLocalResources$17$$anonfun$apply$6.apply(Client.scala:651)\n\tat scala.collection.mutable.ArraySeq.foreach(ArraySeq.scala:74)\n\tat org.apache.spark.deploy.yarn.Client$$anonfun$prepareLocalResources$17.apply(Client.scala:651)\n\tat org.apache.spark.deploy.yarn.Client$$anonfun$prepareLocalResources$17.apply(Client.scala:650)\n\tat scala.collection.immutable.List.foreach(List.scala:381)\n\tat org.apache.spark.deploy.yarn.Client.prepareLocalResources(Client.scala:650)\n\tat org.apache.spark.deploy.yarn.Client.createContainerLaunchContext(Client.scala:921)\n\tat org.apache.spark.deploy.yarn.Client.submitApplication(Client.scala:169)\n\tat org.apache.spark.scheduler.cluster.YarnClientSchedulerBackend.start(YarnClientSchedulerBackend.scala:57)\n\tat org.apache.spark.scheduler.TaskSchedulerImpl.start(TaskSchedulerImpl.scala:164)\n\tat org.apache.spark.SparkContext.\u003cinit\u003e(SparkContext.scala:500)\n\tat org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2493)\n\tat org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:934)\n\tat org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:925)\n\tat scala.Option.getOrElse(Option.scala:121)\n\tat org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:925)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.zeppelin.spark.BaseSparkScalaInterpreter.spark2CreateContext(BaseSparkScalaInterpreter.scala:233)\n\tat org.apache.zeppelin.spark.BaseSparkScalaInterpreter.createSparkContext(BaseSparkScalaInterpreter.scala:165)\n\tat org.apache.zeppelin.spark.SparkScala211Interpreter.open(SparkScala211Interpreter.scala:87)\n\tat org.apache.zeppelin.spark.NewSparkInterpreter.open(NewSparkInterpreter.java:102)\n\tat org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:62)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:69)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:617)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:188)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n"
+          }
+        ]
+      },
       "apps": [],
       "jobName": "paragraph_1550867803379_-480091773",
       "id": "20190222-203643_422642760",
       "dateCreated": "2019-02-22 20:36:43.379",
-      "status": "READY",
+      "dateStarted": "2019-02-22 21:01:45.396",
+      "dateFinished": "2019-02-22 21:01:59.627",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
