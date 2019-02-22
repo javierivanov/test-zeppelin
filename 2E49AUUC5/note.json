@@ -21,16 +21,41 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cconsole\u003e:24: error: not found: value dasdsa\n       dasdsa\n       ^\n"
+          }
+        ]
+      },
       "apps": [],
       "jobName": "paragraph_1550869068119_-1004643789",
       "id": "20190222-205748_1906573554",
       "dateCreated": "2019-02-22 20:57:48.119",
-      "status": "READY",
+      "dateStarted": "2019-02-22 20:57:50.682",
+      "dateFinished": "2019-02-22 20:58:19.059",
+      "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
+      "text": "vdfvdfvdfvdfvfd",
       "user": "admin",
-      "config": {},
+      "dateUpdated": "2019-02-22 21:00:52.104",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
       "settings": {
         "params": {},
         "forms": {}
